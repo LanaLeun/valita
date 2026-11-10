@@ -12,7 +12,7 @@ button.addEventListener('click', () => {
 
     let hasError = false;
 
-    if (first === '' || isNaN(Number(first)) || first === "0") {
+    if (first === '' || isNaN(Number(first)) || first < 0 ) {
         firstInput.classList.add('error');
         firstError.textContent = "Введите сумму от 0";
         firstError.style.color = "red"
