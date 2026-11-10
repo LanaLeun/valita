@@ -7,8 +7,8 @@ const button = document.querySelector('button');
 const result = document.getElementById('result');
 
 button.addEventListener('click', () => {
-    const first = firstInput.value
 
+    const first = firstInput.value
 
     let hasError = false;
 
@@ -17,10 +17,11 @@ button.addEventListener('click', () => {
         firstError.textContent = "Введите сумму от 0";
         firstError.style.color = "red"
         hasError = true;
-    }
-    if (hasError)return
+    } 
+    if (hasError) return
     const from = fromCurrency.value
     const to = toCurrency.value
+
     if (from === "RUB" && to === "USD") {
         result.textContent = `${first}${from}=${(Number(first) * 0.012).toFixed(2)}${to}`
     } else if (from === "RUB" && to === "EUR") {
