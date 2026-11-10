@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор валют</title>
+    <script src="index.js" defer></script>
+    <style>
+        .resiltcont {
+            display: flex;
+        }
+
+        .error {
+            border: 2px solid red;
+            background-color: #ffe5e5;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="firstInput" type="text">
+        <p id="firstInputError"></p>
+    </div>
+
+    <label for="currency">Из какой валюты</label>
+    <select id="fromCurrency">
+        <option value="RUB">Рубли</option>
+        <option value="USD">Доллары</option>
+        <option value="EUR">Евро</option>
+        <option value="KZT">Тенге</option>
+    </select>
+
+    <label for="currency">В какую валюту</label>
+    <select id="toCurrency">
+        <option value="RUB">Рубли</option>
+        <option value="USD">Доллары</option>
+        <option value="EUR">Евро</option>
+        <option value="KZT">Тенге</option>
+    </select>
+    <button id="button">Перевести</button>
+    <p id="result"></p>
+
+    <div class="resultcont">
+        <p class="result"></p>
+    </div>
+</body>
+
+</html>
